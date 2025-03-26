@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadpool Clicker Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameModeSelection">
+        <button onclick="selectMode('solo')">Play Alone</button>
+        <button onclick="selectMode('multiplayer')">Multiplayer</button>
+    </div>
+
+    <div id="gameArea" style="display: none;">
+        <div id="background"></div>
+
+        <div id="deadpoolImage" onclick="clickImage()">
+            <img src="deadpool.png" alt="Deadpool">
+        </div>
+
+        <div id="moneyDisplay">Money: $0</div>
+
+        <div id="upgradeSidebar">
+            <h3>Upgrades</h3>
+            <div id="upgrades"></div>
+        </div>
+
+        <button id="randomButton" style="display: none;" onclick="onRandomButtonClick()">Robbie.m.c</button>
+
+        <div id="cheatMenu">
+            <button onclick="addMoney(1)">Give $1</button>
+            <button onclick="addMoney(10)">Give $10</button>
+            <button onclick="addMoney(100)">Give $100</button>
+            <button onclick="addMoney(1000)">Give $1000</button>
+            <button onclick="resetMoney()">Reset Money</button>
+            <button onclick="halveMoney()">Divide Money by 2</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
