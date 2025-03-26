@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87CEEB; /* Bright blue sky */
+}
+
+#gameArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#deadpoolImage img {
+    width: 200px;
+    cursor: pointer;
+}
+
+#upgradeSidebar {
+    margin-left: 20px;
+}
+
+#moneyDisplay {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#cheatMenu {
+    margin-top: 20px;
+}
+
+#randomButton {
+    background-color: yellow;
+    padding: 10px;
+    font-size: 16px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#gameModeSelection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+}
